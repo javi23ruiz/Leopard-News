@@ -1,0 +1,10 @@
+description of the app: summarize news in real-time from different sources such as 
+                        GoogleNews, Bloomberg, YahooNews, etc. The user will enter a keyword or company name, asset name that will triger a pipeline to retrieve all the news 
+                        from the several sources. After that create a prompt and call a LLM service to summarize 
+                        - Build QA with the news. Create vector store on the fly and 
+                        store them in a low latency database (Redis).  
+
+app: front and back with streamlit. 
+google_news_api.py in services
+create inheritance of claases with metaclass ABC??
+LLM service: OpenAI model (closed-source) or open-source like Llama-2, Vicuna, etc. 
